@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b0584gntgesl6"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_32lhk"]
+[ext_resource type="PackedScene" uid="uid://b2sktvkooqffb" path="res://scenes/Map.tscn" id="2_7g83o"]
+
+[node name="World" type="Node3D" unique_id=1994931582]
+
+[node name="ProtoController" parent="." unique_id=1744733407 instance=ExtResource("1_32lhk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+can_sprint = true
+can_freefly = true
+input_jump = "input_jump"
+input_freefly = "input_freefl"
+
+[node name="Map" parent="." unique_id=2084045103 instance=ExtResource("2_7g83o")]

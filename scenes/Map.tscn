@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b2sktvkooqffb"]
+
+[sub_resource type="Environment" id="Environment_hrmi8"]
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_4xfga"]
+
+[sub_resource type="Compositor" id="Compositor_paxxb"]
+
+[node name="Map" type="Node3D" unique_id=2084045103]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1526577266]
+use_collision = true
+size = Vector3(50, 1, 50)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=708952540]
+environment = SubResource("Environment_hrmi8")
+camera_attributes = SubResource("CameraAttributesPractical_4xfga")
+compositor = SubResource("Compositor_paxxb")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1546496528]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 12, 0)
